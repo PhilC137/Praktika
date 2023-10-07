@@ -1,0 +1,3 @@
+C:/Uni/Systemprogrammierung/SYSTEMPROGRAMMIERUNG/SinCosSchleifen/cmake-build-debug/CMakeFiles/SinCosSchleifen.dir
+C:/Uni/Systemprogrammierung/SYSTEMPROGRAMMIERUNG/SinCosSchleifen/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Uni/Systemprogrammierung/SYSTEMPROGRAMMIERUNG/SinCosSchleifen/cmake-build-debug/CMakeFiles/rebuild_cache.dir
