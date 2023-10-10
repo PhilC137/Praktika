@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include <math.h>
 
 #define PI 3.14159265
 
@@ -18,10 +17,11 @@ void sinF(){
 
 void sinW(){
     printf("\nPrint whit sinW Function");
-    double x, res ,val = 0;
-    val = PI / 180;
+    double x, res ,value;
+    x = 0;
+    value = PI / 180;
     do {
-        res = sin(x*val);
+        res = sin(x*value);
         printf("\nThe sine of %lf is ", x);
         printf("%.3f", res);
         printf(" degrees");

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Uni/Systemprogrammierung/SYSTEMPROGRAMMIERUNG/SinCosSchleifen
+# Install script for directory: C:/Uni/Systemprogrammierung/Praktika/1_Praktika/SinCosSchleifen
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Uni/Systemprogrammierung/SYSTEMPROGRAMMIERUNG/SinCosSchleifen/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Uni/Systemprogrammierung/Praktika/1_Praktika/SinCosSchleifen/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
