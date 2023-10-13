@@ -9,9 +9,7 @@ void sinF(){
     val = PI / 180;
     for (double i = 0; i <= 360; i+=10) {
         ret = sin(i*val);
-        printf("\nThe sine of %lf is ", i);
-        printf("%.3f", ret);
-        printf(" degrees");
+        printf("\nThe sine of %.0f is %.3f degrees", i, ret);
     }
 }
 
@@ -22,9 +20,7 @@ void sinW(){
     value = PI / 180;
     do {
         res = sin(x*value);
-        printf("\nThe sine of %lf is ", x);
-        printf("%.3f", res);
-        printf(" degrees");
+        printf("\nThe sine of %.0f is %.3f degrees" , x,res);
         x += 10;
     } while (x <= 360);
 

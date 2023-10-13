@@ -3,4 +3,5 @@ project(SinCosSchleifen C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(SinCosSchleifen main.c)
+add_executable(SinCosSchleifen main.c
+        ../Kalender/Kalender.c)
