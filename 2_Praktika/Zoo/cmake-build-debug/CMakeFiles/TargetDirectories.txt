@@ -1,0 +1,3 @@
+D:/Studium_Informatik/3_Semester/Systemprogrammierung/Praktika/2_Praktika/Zoo/cmake-build-debug/CMakeFiles/Zoo.dir
+D:/Studium_Informatik/3_Semester/Systemprogrammierung/Praktika/2_Praktika/Zoo/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Studium_Informatik/3_Semester/Systemprogrammierung/Praktika/2_Praktika/Zoo/cmake-build-debug/CMakeFiles/rebuild_cache.dir

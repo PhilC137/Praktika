@@ -1,3 +1,0 @@
-D:/Studium_Informatik/3_Semester/Systemprogrammierung/Praktika/1_Praktika/SinCosSchleifen/cmake-build-debug/CMakeFiles/SinCosSchleifen.dir
-D:/Studium_Informatik/3_Semester/Systemprogrammierung/Praktika/1_Praktika/SinCosSchleifen/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Studium_Informatik/3_Semester/Systemprogrammierung/Praktika/1_Praktika/SinCosSchleifen/cmake-build-debug/CMakeFiles/rebuild_cache.dir
