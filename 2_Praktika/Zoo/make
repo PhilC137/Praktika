@@ -1,3 +1,14 @@
 CC = gcc
 CFLAGS = -g -wall -ansi -pedantic
-OBJS =
+OBJS = func.o main.o
+
+all: zoo
+zoo: $(OBJS)
+    $(CC) -o$@$^
+func.o :func_utils.c animal.h
+    $(CC) $(CFLAGS)-c $<
+main.o :Zoo.c animal.h
+    $(CC) $(CFLAGS)-c $<
+
+clean:
+    rm -rf zoo $(OBJS)

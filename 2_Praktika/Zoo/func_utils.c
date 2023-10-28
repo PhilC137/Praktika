@@ -64,18 +64,11 @@ void more_food(){
 }
 
 /*Prints one specific animal stats*/
-void print_animal(struct animal pickAnimal){
-    int i;
-    for(i = 0; i < size; i++){
-        if(strcmp(pickAnimal.name, Zoo[i].name) == 0){
-            pickAnimal = Zoo[i];
-            break;
-        }
+void print_animal(int number){
 
-    }
     printf("Name of the Animal: %s\nAge: %d\nfood weight: %.2f\n",
-           pickAnimal.name, pickAnimal.age, pickAnimal.food_weight);
-    switch (pickAnimal.species) {
+           Zoo[number].name, Zoo[number].age, Zoo[number].food_weight);
+    switch (Zoo[number].species) {
         case 0:
             printf("Species: Mammal\n\n");
             break;
@@ -99,6 +92,6 @@ void print_animal(struct animal pickAnimal){
 void print_Zoo(){
     int i;
     for (i = 0; i < size; ++i) {
-        print_animal(Zoo[i]);
+        print_animal(i);
     }
 }

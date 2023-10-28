@@ -10,13 +10,14 @@ struct animal {
     float food_weight;
 };
 
+
 int calculate_all_animals();
 
 float calculate_average_age();
 
 void more_food();
 
-void print_animal(struct animal pickAnimal);
+void print_animal(int number);
 
 void print_Zoo();
 
