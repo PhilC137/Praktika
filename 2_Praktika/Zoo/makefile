@@ -9,7 +9,7 @@ all: zoo
 .PHONY: intstall
 intstall: %(OBJS)
     #Kopier die ausführbare Datei in das Installationsverzeichnis
-cp %(OBJS) %(INSTALL_DIR)
+	cp %(OBJS) %(INSTALL_DIR)
 
 .PHONY: test
 test: unit_test
@@ -21,15 +21,15 @@ unit_test:
 
 .PHONY: run
 run: %(OBJS)
-zoo.o 
+	zoo.o
     
 .PHONY: doc
 doc:
-    doxygen Doxyfile
+	doxygen Doxyfile
 
 
 zoo: $(OBJS)
 
 .PHONY: clean
 clean:
-    rm -rf (OBJS)
+	rm -rf (OBJS)
