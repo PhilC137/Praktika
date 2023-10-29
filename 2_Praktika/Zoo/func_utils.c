@@ -58,6 +58,9 @@ void more_food(){
             case Amphibian:
                 Zoo[i].food_weight += Zoo[i].food_weight*0.02;
                 break;
+            case Reptiles:
+                Zoo[i].food_weight = Zoo[i].food_weight;
+                break;
         }
         printf("The %s gets %.2f food weight\n",Zoo[i].name,Zoo[i].food_weight);
     }

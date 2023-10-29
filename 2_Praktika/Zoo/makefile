@@ -1,35 +1,37 @@
 CC = gcc
-CFLAGS = -g -wall -ansi -pedantic
-OBJS = func.o zoo.o
-INSTALL_DIR = /user/local/bin
+CFLAGS = -g -Wall -ansi -pedantic
+OBJS = func_utils.o Zoo.o
+INSTALL_DIR = /usr/local/bin
 
 .PHONY: all
-all: $(OBJS)
+all: zoo
 
-.PHONY: intstall
-intstall: $(OBJS)
-    #Kopier die ausführbare Datei in das Installationsverzeichnis
-	cp $(OBJS) $(INSTALL_DIR)
+.PHONY: install
+install: all
+	# Kopiere die ausführbare Datei in das Installationsverzeichnis
+	cp zoo $(INSTALL_DIR)
 
 .PHONY: test
 test: unit_test
-    
 
 .PHONY: unit_test
 unit_test:
-    #Hier koennten Befehle zum Ausfuehren von Test stehen
+	# Hier könnten Befehle zum Ausführen von Tests stehen
 
 .PHONY: run
-run: $(OBJS)
-	zoo.o
-    
+run: all
+	./zoo
+
 .PHONY: doc
 doc:
 	doxygen Doxyfile
 
-
 zoo: $(OBJS)
+	$(CC) -o zoo $(OBJS)
+
+func_utils.o: func_utils.c
+	$(CC) $(CFLAGS) -c func.c
 
 .PHONY: clean
 clean:
-	rm -rf $(OBJS)
+	rm -f $(OBJS) zoo
