@@ -10,7 +10,6 @@ struct animal {
     float food_weight;
 };
 
-
 int calculate_all_animals();
 
 float calculate_average_age();

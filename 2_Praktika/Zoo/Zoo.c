@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "animal.h"
 #include <string.h>
+#include "animal.h"
 
 int main() {
     calculate_all_animals();
