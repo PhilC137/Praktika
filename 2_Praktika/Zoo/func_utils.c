@@ -2,6 +2,15 @@
 #include <string.h>
 #include "animal.h"
 
+enum viech { Mammal, Fish, Bird, Amphibian, Reptiles };
+
+struct animal {
+    enum viech species;
+    char name[20];
+    int age;
+    float food_weight;
+};
+
 struct animal Zoo[10] = {
         {Mammal,"Elephant",30,20.5},
         {Fish,"Clown Fish",2,0.5},
