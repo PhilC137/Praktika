@@ -1,15 +1,28 @@
+#include <stdio.h>
+#include <string.h>
 #include "header.h"
+struct students{
+    char name[25];
+    char enrolled[3];
+    int cps;
+} students;
 
-enum main_list;
+struct node{
+ struct students student;
+ struct node *next;
+ struct node *prev;
+}node;
 
-enum ifm_students;
+struct students holgar = {
+        "Holgar","IFM",394};
+struct students beate = {
+        "Beate","IFM",8};
+struct students heinz = {
+        "Heinz","ELM",10};
 
-typedef struct date{
-    int day;
-    int month;
-    int year;
+struct node main_list = {
+        {}
 };
+struct node ifm_students;
 
-typedef struct students{
-
-};
+struct node stuedents_sorted_by_ects;
