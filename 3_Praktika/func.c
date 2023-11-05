@@ -1,28 +1,61 @@
 #include <stdio.h>
 #include <string.h>
+#include <malloc.h>
 #include "header.h"
-struct students{
-    char name[25];
-    char enrolled[3];
-    int cps;
-} students;
 
-struct node{
- struct students student;
- struct node *next;
- struct node *prev;
-}node;
 
-struct students holgar = {
-        "Holgar","IFM",394};
-struct students beate = {
-        "Beate","IFM",8};
-struct students heinz = {
-        "Heinz","ELM",10};
+node *oldNode;
 
-struct node main_list = {
-        {}
-};
-struct node ifm_students;
+void addStudents(list *lst, students *st) {
 
-struct node stuedents_sorted_by_ects;
+
+    node *newNode = (node *)malloc(sizeof(node));
+
+    newNode->stdnt = st;
+    newNode->next = NULL;
+    newNode->prev = NULL;
+
+    if (lst->firstNode == NULL) {
+        oldNode = (node *)malloc(sizeof(node));
+        lst->firstNode = newNode;
+    } else {
+
+        oldNode->next = newNode;
+        newNode->prev = oldNode;
+
+    }
+
+   oldNode = newNode;
+
+}
+
+int count;
+
+
+void print(list *lst){
+    count = 0;
+    node *tempNode = NULL;
+
+    if(lst->firstNode != NULL){
+
+        if (count == 0){
+            tempNode = lst->firstNode;
+            count++;
+        }
+
+        while (tempNode != NULL){
+
+            printf("Name: %s enroled: %u CPS: %i \n",tempNode->stdnt->name ,tempNode->stdnt->modul, tempNode->stdnt->cps);
+            tempNode = tempNode->next;
+            count++;
+
+        };
+
+    } else {
+        printf("List is empty");
+        return;
+    }
+
+}
+
+
