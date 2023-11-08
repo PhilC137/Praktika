@@ -1,7 +1,7 @@
 #ifndef HEADER_H
 #define HEADER_H
 
-typedef enum {
+typedef enum enrolled{
     IFM,
     BIO,
     MATHE,
@@ -9,8 +9,10 @@ typedef enum {
     SOZIAL
 }enrolled;
 
+
+
 typedef struct {
-    char name[25];
+    char name[10];
     enrolled modul;
     int cps;
 } students;
@@ -28,6 +30,10 @@ typedef struct list{
 
 void addStudents(list *list ,students *st);
 
-void print(list *lst);
+void printList(list *lst);
+
+void traversieren(enrolled modul, list *listForSort, list *newList);
+
+void delete(students *st,list *lst,int chose);
 
 #endif
